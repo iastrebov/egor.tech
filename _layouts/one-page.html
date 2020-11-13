@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>vCard - About</title>
+
+	<!-- Meta Data -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="address=no"/>
+    <meta name="author" content="ArtTemplate" />
+    <meta name="description" content="vCard" />
+
+    <!-- Twitter data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@ArtTemplates">
+    <meta name="twitter:title" content="vCard">
+    <meta name="twitter:description" content="vCard">
+    <meta name="twitter:image" content="assets/images/social.jpg">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="ArtTemplate" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="your url website" />
+    <meta property="og:image" content="assets/images/social.jpg" />
+    <meta property="og:description" content="vCard" />
+    <meta property="og:site_name" content="vCard" />
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-touch-icon-57x57.png">
+	<link rel="shortcut icon" href="assets/images/favicons/favicon.png" type="image/png">
+
+    <!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="assets/styles/vendors/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/styles/style.css"/>
+	
+	<!-- Mapbox-->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
+	<link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
+	
+</head>
+<body>
+    <main class="main">
+	    <div class="container gutter-top gutter-bottom">
+		    <div class="row sticky-parent">
+			    <!-- Sidebar -->
+                <aside class="col-12 col-md-12 col-xl-3">
+				    <div class="sidebar box-outer sticky-column">
+						<!-- My photo -->
+						<div class="sidebar__base-info">
+					    	<figure class="avatar-box">
+                                <img src="assets/images/my-avatar.png" alt="Ricardo Black">
+						    </figure>
+
+						    <div class="text-xl-center">
+						        <h3 class="title title--h3 sidebar__name">Ricardo Black</h3>
+							    <div class="badge">Creative Director</div>
+						    </div>
+
+							<button class="btn btn--small btn--icon-right sidebar__btn js-btn-toggle"><span>Show Contacts</span><i class="feathericon-chevron-down"></i></button>
+						</div>
+
+						<div class="sidebar__additional-info js-show">
+							<div class="separation"></div>
+		                    <ul class="details-info">
+							    <!-- Email -->
+							    <li class="details-info__item">
+							        <span class="box icon-box"><i class="font-icon icon-envelope"></i></span>
+								    <div class="contacts-block__info">
+									    <span class="overhead">Email</span>
+									    <a class="text-overflow" href="mailto:ricardo@example.com" title="ricardo@example.com">ricardo@example.com</a>
+								    </div>
+							    </li>
+							    <!-- Phone -->
+						 	    <li class="details-info__item">
+								    <span class="box icon-box"><i class="font-icon icon-phone"></i></span>
+								    <div class="contacts-block__info">
+									    <span class="overhead">Phone</span>
+							            <span class="text-overflow" title="+1 (070) 123-4567">+1 (070) 123-4567</span>
+								    </div>	
+							    </li>
+								<!-- Birthday -->
+					            <li class="details-info__item">
+								    <span class="box icon-box"><i class="font-icon icon-calendar"></i></span>
+								    <div class="contacts-block__info">
+									    <span class="overhead">Birthday</span>
+							            <span class="text-overflow" title="March 12, 1995">March 12, 1995</span>
+								    </div>
+							    </li>
+								<!-- Location -->
+						        <li class="details-info__item">
+								    <span class="box icon-box"><i class="font-icon icon-location"></i></span>
+								    <div class="contacts-block__info">
+									    <span class="overhead">Location</span>
+									    <span class="text-overflow" title="San-Francisco, USA">San-Francisco, USA</span>
+								    </div>
+							    </li>
+					        </ul>
+						    <div class="separation d-xl-none"></div>
+
+						    <!-- Social -->
+						    <div class="social">
+							    <a class="social__link" href="https://www.facebook.com/"><i class="feathericon-facebook"></i></a>
+							    <a class="social__link" href="https://www.behance.com/"><i class="feathericon-twitter"></i></a>
+						  	    <a class="social__link" href="https://www.linkedin.com/"><i class="feathericon-instagram"></i></a>
+						    </div>
+						</div>	
+					</div>	
+		        </aside>
+		        
+				<!-- Content -->
+		        <div class="col-12 col-md-12 col-xl-9">
+				    <div class="box-outer">
+					    <!-- Menu -->
+						<div class="nav-container js-tabs">
+						    <ul class="nav" id="myTab" role="tablist">
+                                <li class="nav__item" role="presentation"><a id="about-tab" class="active" href="#about" data-bs-toggle="tab" role="tab" aria-controls="about" aria-selected="true">About</a></li>
+								<li class="nav__item" role="presentation"><a id="resume-tab" href="#resume" data-bs-toggle="tab" role="tab" aria-controls="resume" aria-selected="false">Resume</a></li>
+                                <li class="nav__item" role="presentation"><a id="portfolio-tab" href="#portfolio" data-bs-toggle="tab" role="tab" aria-controls="portfolio" aria-selected="false">Portfolio</a></li>
+                                <li class="nav__item" role="presentation"><a id="blog-tab" href="#blog" data-bs-toggle="tab" role="tab" aria-controls="blog" aria-selected="false">Blog</a></li>
+                                <li class="nav__item" role="presentation"><a id="contact-tab" href="#contact" data-bs-toggle="tab" role="tab" aria-controls="contact" aria-selected="false">Contact</a></li>
+                            </ul>
+						</div>
+
+			            <div class="content tab-content" id="myTabContent"><!-- id="content" -->
+							<!-- ABOUT -->
+						    <div id="about" class="tab-pane fade show active _tabcontent _active" role="tabpanel" aria-labelledby="about-tab"><!-- id="about-tab" -->
+						        <div class="pb-0 pb-sm-2">
+		                            <h1 class="title title--h1 title__separate">About Me</h1>
+						            <p>I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.</p>
+                                    <p>My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.</p>
+					            </div>
+						
+					            <!-- What -->
+					        	<h2 class="title title--h2 mt-3">What I'm Doing</h2>
+						        <div class="row">
+							        <!-- Case Item -->
+							        <div class="col-12 col-lg-6">
+							            <div class="case-item box box-inner">
+									        <img class="case-item__icon" src="assets/icons/icon-design.svg" alt="" />
+									        <div>
+									            <h3 class="title title--h3">Web Design</h3>
+										        <p class="case-item__caption">The most modern and high-quality design made at a professional level.</p>
+									        </div>	
+								        </div>
+							        </div>
+								
+							        <!-- Case Item -->
+							        <div class="col-12 col-lg-6">
+							            <div class="case-item box box-inner">
+									        <img class="case-item__icon" src="assets/icons/icon-dev.svg" alt="" />
+									        <div>
+									            <h3 class="title title--h3">Web Development</h3>
+										        <p class="case-item__caption">High-quality development of sites at the professional level.</p>
+									        </div>
+								        </div>
+							        </div>
+								
+							        <!-- Case Item -->
+							        <div class="col-12 col-lg-6">
+								        <div class="case-item box box-inner">
+								            <img class="case-item__icon" src="assets/icons/icon-app.svg" alt="" />
+									        <div>
+								                <h3 class="title title--h3">Mobile Apps</h3>
+									            <p class="case-item__caption">Professional development of applications for iOS and Android.</p>
+									        </div>
+								        </div>
+							        </div>
+								
+							        <!-- Case Item -->
+							        <div class="col-12 col-lg-6">
+								        <div class="case-item box box-inner">
+									        <img class="case-item__icon" src="assets/icons/icon-photo.svg" alt="" />
+									        <div>
+									            <h3 class="title title--h3">Photography</h3>
+										        <p class="case-item__caption">I make high-quality photos of any category at a professional level.</p>
+									        </div>
+								        </div>
+							        </div>
+						        </div>	
+						
+						        <!-- Testimonials -->
+						        <div class="testimonials">
+						            <h2 class="title title--h2 mt-3">Testimonials</h2>
+						
+						            <div class="swiper-container js-carousel-review">
+                                        <div class="swiper-wrapper">
+								            <!-- Item review -->
+                                            <div class="swiper-slide review-item box box-inner js-open-review" data-mfp-src="#review-1" data-effect="mfp-zoom-out">
+										        <figure class="box box-avatar">
+                                                    <img src="assets/images/avatar-1.png" alt="Daniel Lewis">
+										        </figure>
+									            <h4 class="title title--h3">Daniel Lewis</h4>
+										        <p class="review-item__caption">Ricardo was hired to create a corporate identity. We were very pleased with the work done...</p>
+									        </div>
+									
+									        <!-- Item review -->
+                                            <div class="swiper-slide review-item box box-inner js-open-review" data-mfp-src="#review-2" data-effect="mfp-zoom-out">
+                                                <figure class="box box-avatar">
+                                                    <img src="assets/images/avatar-2.png" alt="Daniel Lewis">
+										        </figure>
+									            <h4 class="title title--h3">Jessica Miller</h4>
+										        <p class="review-item__caption">Thanks to the skill of Ricardo, we have a design that we can be proud of. We are impressed with...</p>
+									        </div>
+									
+									        <!-- Item review -->
+                                            <div class="swiper-slide review-item box box-inner js-open-review" data-mfp-src="#review-3" data-effect="mfp-zoom-out">
+										        <figure class="box box-avatar">
+                                                    <img src="assets/images/avatar-3.png" alt="Daniel Lewis">
+										        </figure>
+									            <h4 class="title title--h3">Emily Evans</h4>
+										        <p class="review-item__caption">Ricardo did a miracle with my website. It looks exactly as I imagined it. Now I have a profession...</p>
+									        </div>
+
+									        <!-- Item review -->
+									        <div class="swiper-slide review-item box box-inner js-open-review" data-mfp-src="#review-4" data-effect="mfp-zoom-out">
+										        <figure class="box box-avatar">
+											        <img src="assets/images/avatar-4.png" alt="Daniel Lewis">
+										        </figure>
+										        <h4 class="title title--h3">Henry William</h4>
+										        <p class="review-item__caption">Thank you very much for your work on our project. It was a big help for us. Thanks to the...</p>
+									        </div>
+                                        </div>
+    
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+						        </div>
+						
+						        <!-- Clients -->
+						        <h2 class="title title--h2 mt-4">Clients</h2>
+						        <div class="swiper-container js-carousel-clients">
+                                    <div class="swiper-wrapper">
+								        <!-- Item client -->
+                                        <figure class="swiper-slide">
+									        <a href="#"><img class="logo-client" src="assets/images/clients/logo-1-color.png" alt="Logo" /></a>
+								        </figure>
+									
+								        <!-- Item client -->
+                                        <figure class="swiper-slide">
+									        <a href="#"><img class="logo-client" src="assets/images/clients/logo-2-color.png" alt="Logo" /></a>
+								        </figure>
+
+								        <!-- Item client -->
+                                        <figure class="swiper-slide">
+								            <a href="#"><img class="logo-client" src="assets/images/clients/logo-3-color.png" alt="Logo" /></a>
+								        </figure>
+
+								        <!-- Item client -->
+                                        <figure class="swiper-slide">
+								   	        <a href="#"><img class="logo-client" src="assets/images/clients/logo-4-color.png" alt="Logo" /></a>
+								        </figure>
+									
+								        <!-- Item client -->
+                                        <figure class="swiper-slide">
+									        <a href="#"><img class="logo-client" src="assets/images/clients/logo-5-color.png" alt="Logo" /></a>
+								        </figure>
+									
+								        <!-- Item client -->
+                                        <figure class="swiper-slide">
+									        <a href="#"><img class="logo-client" src="assets/images/clients/logo-6-color.png" alt="Logo" /></a>
+								        </figure>
+							        </div>
+								
+							        <div class="swiper-pagination"></div>
+						        </div><!-- /swiper-container -->
+						    </div>
+							
+							<!-- RESUME -->
+							<div id="resume" class="tab-pane fade _tabcontent" role="tabpanel" aria-labelledby="resume-tab"><!-- id="resume-tab" -->
+                                <div class="pb-3">
+									<h1 class="title title--h1 title__separate">Resume</h1>
+								</div>
+								
+								<!-- Experience -->
+								<h2 class="title title--h2"><span class="box icon-box"><i class="font-icon feathericon-book-open"></i></span>Education</h2>
+								<div class="timeline">
+									<!-- Item -->
+									<article class="timeline__item">
+										<h5 class="title title--h4 timeline__title">University School of the Arts</h5>
+										<span class="timeline__period">2007 — 2009</span>
+										<p class="timeline__description">Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur.</p>
+									</article>
+												
+									<!-- Item -->
+									<article class="timeline__item">
+										<h5 class="title title--h4 timeline__title">New York Academy of Art</h5>
+										<span class="timeline__period">2005 — 2007</span>
+										<p class="timeline__description">Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est omnis..</p>
+									</article>
+												
+									<!-- Item -->
+									<article class="timeline__item">
+										<h5 class="title title--h4 timeline__title">High School of Art and Design</h5>
+										<span class="timeline__period">2003 — 2005</span>
+										<p class="timeline__description">Duis aute irure dolor in reprehenderit in voluptate, quila voluptas  mag odit aut fugit, sed consequuntur magni dolores eos.</p>
+									</article>
+								</div>
+		
+								<h2 class="title title--h2"><span class="box icon-box"><i class="font-icon feathericon-briefcase"></i></span>Experience</h2>
+								<div class="timeline">
+									<!-- Item -->
+									<article class="timeline__item">
+										<h5 class="title title--h4 timeline__title">Creative Director</h5>
+										<span class="timeline__period">2015 — Present</span>
+										<p class="timeline__description">Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas molestias exceptur.</p>
+									</article>
+												
+									<!-- Item -->
+									<article class="timeline__item">
+										<h5 class="title title--h4 timeline__title">Art Director</h5>
+										<span class="timeline__period">2013 — 2015</span>
+										<p class="timeline__description">Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur.</p>
+									</article>
+												
+									<!-- Item -->
+									<article class="timeline__item">
+										<h5 class="title title--h4 timeline__title">Web Designer</h5>
+										<span class="timeline__period">2010 — 2013</span>
+										<p class="timeline__description">Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur.</p>
+									</article>
+								</div>
+								
+								<!-- Skills -->
+								<h2 class="title title--h2 mt-3">My Skills</h2>
+								<div class="box box-inner mb-0">
+									<!-- Web Design -->
+									<div class="progress">
+										<div class="progress-text"><span>Web Design</span> 80%</div>
+										<div class="progress-bar"><span role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></span></div>
+									</div>
+		
+									<!-- Web Design -->
+									<div class="progress">
+										<div class="progress-text"><span>Graphic Design</span> 75%</div>
+										<div class="progress-bar"><span role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></span></div>
+									</div>
+		
+									<!-- Web Design -->
+									<div class="progress">
+										<div class="progress-text"><span>Branding</span> 90%</div>
+										<div class="progress-bar"><span role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></span></div>
+									</div>
+		
+									<!-- Web Design -->
+									<div class="progress">
+										<div class="progress-text"><span>WordPress</span> 50%</div>
+										<div class="progress-bar"><span role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></span></div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- PORTFOLIO -->
+							<div id="portfolio" class="tab-pane fade _tabcontent" role="tabpanel" aria-labelledby="portfolio-tab"><!-- id="portfolio-tab" -->
+                                <div class="pb-3">
+									<h1 class="title title--h1 title__separate">Portfolio</h1>
+								</div>
+		
+								<!-- Filter -->
+								<div class="select">
+									<span class="placeholder">Select category</span>
+									<ul class="filter">
+										<li class="filter__item">Category</li>
+										<li class="filter__item active" data-filter="*"><a class="filter__link active" href="#filter">All</a></li>
+										<li class="filter__item" data-filter=".category-design"><a class="filter__link" href="#filter">Web Design</a></li>
+										<li class="filter__item" data-filter=".category-applications"><a class="filter__link" href="#filter">Applications</a></li>
+										<li class="filter__item" data-filter=".category-web-development"><a class="filter__link" href="#filter">Web Development</a></li>
+									</ul>
+									<input type="hidden" name="changemetoo"/>
+								</div>
+		
+								<!-- Gallery -->
+								<div class="gallery-grid js-masonry js-filter-container">
+									<div class="gutter-sizer"></div>
+									<!-- Item 1 -->
+									<div class="gallery-grid__item category-design">
+										<a href="single-project.html">
+											<div class="gallery-grid__image-wrap">
+												<img class="gallery-grid__image cover lazyload" src="assets/images/projects/project-1.jpg" alt="" />
+											</div>
+											<div class="gallery-grid__caption">
+												<h3 class="title gallery-grid__title">Moonboard</h3>
+												<span class="gallery-grid__category">Web Design</span>
+											</div>
+										</a>
+									</div>
+									
+									<!-- Item 2 -->
+									<div class="gallery-grid__item category-applications">
+										<a href="single-project.html">
+											<div class="gallery-grid__image-wrap">
+												<img class="gallery-grid__image cover lazyload" src="assets/images/projects/project-2.jpg" alt="" />
+											</div>
+											<div class="gallery-grid__caption">
+												<h3 class="title gallery-grid__title">Gourmania</h3>
+												<span class="gallery-grid__category">Applications</span>
+											</div>
+										</a>
+									</div>
+									
+									<!-- Item 3 -->
+									<div class="gallery-grid__item category-web-development">
+										<a href="single-project.html">
+											<div class="gallery-grid__image-wrap">
+												<img class="gallery-grid__image cover lazyload" src="assets/images/projects/project-3.jpg" alt="" />
+											</div>
+											<div class="gallery-grid__caption">
+												<h3 class="title gallery-grid__title">Rocket</h3>
+												<span class="gallery-grid__category">Web Development</span>
+											</div>
+										</a>
+									</div>
+		
+									<!-- Item 4 -->
+									<div class="gallery-grid__item category-applications">
+										<a href="single-project.html">
+											<div class="gallery-grid__image-wrap">
+												<img class="gallery-grid__image cover lazyload" src="assets/images/projects/project-4.jpg" alt="" />
+											</div>
+											<div class="gallery-grid__caption">
+												<h3 class="title gallery-grid__title">Micro</h3>
+												<span class="gallery-grid__category">Applications</span>
+											</div>
+										</a>
+									</div>
+		
+									<!-- Item 5 -->
+									<div class="gallery-grid__item category-web-development">
+										<a href="single-project.html">
+											<div class="gallery-grid__image-wrap">
+												<img class="gallery-grid__image cover lazyload" src="assets/images/projects/project-5.jpg" alt="" />
+											</div>
+											<div class="gallery-grid__caption">
+												<h3 class="title gallery-grid__title">Elemento</h3>
+												<span class="gallery-grid__category">Web Development</span>
+											</div>
+										</a>
+									</div>
+		
+									<!-- Item 6 -->
+									<div class="gallery-grid__item category-design">
+										<a href="single-project.html">
+											<div class="gallery-grid__image-wrap">
+												<img class="gallery-grid__image cover lazyload" src="assets/images/projects/project-6.jpg" alt="" />
+											</div>
+											<div class="gallery-grid__caption">
+												<h3 class="title gallery-grid__title">Alpha</h3>
+												<span class="gallery-grid__category">Web Design</span>
+											</div>
+										</a>
+									</div>
+		
+									<!-- Item 7 -->
+									<div class="gallery-grid__item category-web-development">
+										<a href="single-project.html">
+											<div class="gallery-grid__image-wrap">
+												<img class="gallery-grid__image cover lazyload" src="assets/images/projects/project-7.jpg" alt="" />
+											</div>
+											<div class="gallery-grid__caption">
+												<h3 class="title gallery-grid__title">Voltum</h3>
+												<span class="gallery-grid__category">Web Development</span>
+											</div>
+										</a>
+									</div>
+		
+									<!-- Item 8 -->
+									<div class="gallery-grid__item category-applications">
+										<a href="single-project.html">
+											<div class="gallery-grid__image-wrap">
+												<img class="gallery-grid__image cover lazyload" src="assets/images/projects/project-8.jpg" alt="" />
+											</div>
+											<div class="gallery-grid__caption">
+												<h3 class="title gallery-grid__title">Orange</h3>
+												<span class="gallery-grid__category">Applications</span>
+											</div>
+										</a>
+									</div>
+		
+									<!-- Item 9 -->
+									<div class="gallery-grid__item category-design">
+										<a href="single-project.html">
+											<div class="gallery-grid__image-wrap">
+												<img class="gallery-grid__image cover lazyload" src="assets/images/projects/project-9.jpg" alt="" />
+											</div>
+											<div class="gallery-grid__caption">
+												<h3 class="title gallery-grid__title">Omega</h3>
+												<span class="gallery-grid__category">Web Design</span>
+											</div>
+										</a>
+									</div>
+								</div><!-- /Gallery -->
+							</div>
+							
+							<!-- BLOG -->
+							<div id="blog" class="tab-pane fade _tabcontent" role="tabpanel" aria-labelledby="blog-tab"><!-- id="blog-tab" -->
+                                <div class="pb-0 pb-sm-2">
+									<h1 class="title title--h1 title__separate">Blog</h1>
+								</div>
+		
+								<!-- News -->
+								<div class="news-grid">
+									<!-- Post -->
+									<article class="news-item box">
+										<div class="news-item__image-wrap overlay overlay--45">
+											<a class="news-item__link" href="single-post.html"></a>
+											<img class="cover lazyload" src="assets/images/news/news-1.jpg" alt="" />
+										</div>
+										<div class="news-item__caption">
+											<div class="news-item__date"><span>Design</span>Sep 16, 2019</div>
+											<h2 class="title title--h2"><a href="single-post.html">Design Conferences in 2019</a></h2>
+											<p>Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+										</div>
+									</article>
+		
+									<!-- Post -->
+									<article class="news-item box">
+										<div class="news-item__image-wrap overlay overlay--45">
+											<a class="news-item__link" href="single-post.html"></a>
+											<img class="cover lazyload" src="assets/images/news/news-2.jpg" alt="" />
+										</div>
+										<div class="news-item__caption">
+											<div class="news-item__date"><span>Design</span>Sep 16, 2019</div>
+											<h2 class="title title--h2"><a href="single-post.html">Best Fonts Every Designer</a></h2>
+											<p>Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.</p>
+										</div>
+									</article>
+		
+									<!-- Post -->
+									<article class="news-item box">
+										<div class="news-item__image-wrap overlay overlay--45">
+											<a class="news-item__link" href="single-post.html"></a>
+											<img class="cover lazyload" src="assets/images/news/news-3.jpg" alt="" />
+										</div>
+										<div class="news-item__caption">
+											<div class="news-item__date"><span>Design</span>Sep 16, 2019</div>
+											<h2 class="title title--h2"><a href="single-post.html">Design Digest #80</a></h2>
+											<p>Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.</p>
+										</div>
+									</article>
+									
+									<!-- Post -->
+									<article class="news-item box">
+										<div class="news-item__image-wrap overlay overlay--45">
+											<a class="news-item__link" href="single-post.html"></a>
+											<img class="cover lazyload" src="assets/images/news/news-4.jpg" alt="" />
+										</div>
+										<div class="news-item__caption">
+											<div class="news-item__date"><span>Design</span>Sep 16, 2019</div>
+											<h2 class="title title--h2"><a href="single-post.html">UI Interactions of the week</a></h2>
+											<p>Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.</p>
+										</div>
+									</article>
+									
+									<!-- Post -->
+									<article class="news-item box">
+										<div class="news-item__image-wrap overlay overlay--45">
+											<a class="news-item__link" href="single-post.html"></a>
+											<img class="cover lazyload" src="assets/images/news/news-5.jpg" alt="" />
+										</div>
+										<div class="news-item__caption">
+											<div class="news-item__date"><span>Design</span>Sep 16, 2019</div>
+											<h2 class="title title--h2"><a href="single-post.html">The Forgotten Art of Spacing</a></h2>
+											<p>Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									</article>
+									
+									<!-- Post -->
+									<article class="news-item box">
+										<div class="news-item__image-wrap overlay overlay--45">
+											<a class="news-item__link" href="single-post.html"></a>
+											<img class="cover lazyload" src="assets/images/news/news-6.jpg" alt="" />
+										</div>
+										<div class="news-item__caption">
+											<div class="news-item__date"><span>Design</span>Sep 16, 2019</div>
+											<h2 class="title title--h2"><a href="single-post.html">Design Digest #79</a></h2>
+											<p>Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.</p>
+										</div>
+									</article>
+								</div><!-- /news-grid -->
+							</div>
+							
+							<!-- CONTACT -->
+							<div id="contact" class="tab-pane fade _tabcontent" role="tabpanel" aria-labelledby="contact-tab"><!-- id="contact-tab" -->
+                                <div class="pb-0 pb-sm-2">
+									<h1 class="title title--h1 title__separate">Contact</h1>
+								</div>
+		
+								<!-- Contact -->
+								<div class="map" id="map"></div>
+								<h2 class="title title--h2">Contact Form</h2>
+									
+								<form id="contact-form" class="contact-form" data-toggle="validator">
+									<div class="row">
+										<div class="form-group col-12 col-md-6">
+											<input type="text" class="input form-control" id="nameContact" name="nameContact" placeholder="Full name" required="required" autocomplete="on" oninvalid="setCustomValidity('Fill in the field')" onkeyup="setCustomValidity('')">
+											<div class="help-block with-errors"></div>
+										</div>
+										<div class="form-group col-12 col-md-6">
+											<input type="email" class="input form-control" id="emailContact" name="emailContact" placeholder="Email address" required="required" autocomplete="on" oninvalid="setCustomValidity('Email is incorrect')" onkeyup="setCustomValidity('')">
+											<div class="help-block with-errors"></div>
+										</div>
+										<div class="form-group col-12 col-md-12">
+											<textarea class="textarea form-control" id="messageContact" name="messageContact" placeholder="Your Message"  rows="4" required="required" oninvalid="setCustomValidity('Fill in the field')" onkeyup="setCustomValidity('')"></textarea>
+											<div class="help-block with-errors"></div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-12 col-md-6 order-2 order-md-1 text-center text-md-start">
+											<div id="validator-contact" class="hidden"></div>
+										</div>
+										<div class="col-12 col-md-6 order-1 order-md-2 text-end">
+											<button type="submit" class="btn"><i class="font-icon icon-send"></i> Send Message</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div><!-- /content -->
+					</div><!-- /box-outer -->
+		        </div><!-- /col -->
+			</div><!-- /sticky-parent -->
+		</div><!-- /container -->
+    </main>
+
+    <div class="back-to-top"></div>
+
+	<!-- Full review 1 -->
+	<div id="review-1" class="popup mfp-hide mfp-with-anim">
+		<div class="row">
+            <div class="col-12 col-sm-2 full-rewiew-con-avatar">
+				<figure class="box box-avatar">
+					<img src="assets/images/avatar-1.png" alt="Daniel Lewis">
+				</figure>
+				<div class="review-icon-quote"></div>
+			</div>
+			<div class="col-12 col-sm-10 full-rewiew-con-text">
+				<h2 class="title title--h2 mb-1">Daniel Lewis</h2>
+				<span class="review-date">14 June, 2021</span>
+				<p>Ricardo was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client.
+				Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.</p>
+				<p>Ut enim ad nesid utminim veniam, quis nostrud eiusmo exercitation ullamco labori is amco commodo consequat  seds eiusmod. Adipisicing velit eu eiusmod nisi ad nulla. 
+				Magna deserunt ipsum pariatur sunt incididunt culpa cupidatat. Pariatur occaecat enim dolor culpa nisi ea eiusmod do qui culpa consectetur laboris eiusmod anim.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Full review 2 -->
+	<div id="review-2" class="popup mfp-hide mfp-with-anim">
+		<div class="row">
+            <div class="col-12 col-sm-2 full-rewiew-con-avatar">
+				<figure class="box box-avatar">
+					<img src="assets/images/avatar-2.png" alt="Daniel Lewis">
+				</figure>
+				<div class="review-icon-quote"></div>
+			</div>
+			<div class="col-12 col-sm-10 full-rewiew-con-text">
+				<h2 class="title title--h2 mb-1">Jessica Miller</h2>
+				<span class="review-date">14 June, 2021</span>
+				<p>Ricardo was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client.
+				Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.</p>
+				<p>Ut enim ad nesid utminim veniam, quis nostrud eiusmo exercitation ullamco labori is amco commodo consequat  seds eiusmod. Adipisicing velit eu eiusmod nisi ad nulla. 
+				Magna deserunt ipsum pariatur sunt incididunt culpa cupidatat. Pariatur occaecat enim dolor culpa nisi ea eiusmod do qui culpa consectetur laboris eiusmod anim.</p>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Full review 3 -->
+	<div id="review-3" class="popup mfp-hide mfp-with-anim">
+		<div class="row">
+            <div class="col-12 col-sm-2 full-rewiew-con-avatar">
+				<figure class="box box-avatar">
+					<img src="assets/images/avatar-3.png" alt="Daniel Lewis">
+				</figure>
+				<div class="review-icon-quote"></div>
+			</div>
+			<div class="col-12 col-sm-10 full-rewiew-con-text">
+				<h2 class="title title--h2 mb-1">Emily Evans</h2>
+				<span class="review-date">14 June, 2021</span>
+				<p>Ricardo was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client.
+				Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.</p>
+				<p>Ut enim ad nesid utminim veniam, quis nostrud eiusmo exercitation ullamco labori is amco commodo consequat  seds eiusmod. Adipisicing velit eu eiusmod nisi ad nulla. 
+				Magna deserunt ipsum pariatur sunt incididunt culpa cupidatat. Pariatur occaecat enim dolor culpa nisi ea eiusmod do qui culpa consectetur laboris eiusmod anim.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Full review 4 -->
+	<div id="review-4" class="popup mfp-hide mfp-with-anim">
+		<div class="row">
+            <div class="col-12 col-sm-2 full-rewiew-con-avatar">
+				<figure class="box box-avatar">
+					<img src="assets/images/avatar-4.png" alt="Daniel Lewis">
+				</figure>
+				<div class="review-icon-quote"></div>
+			</div>
+			<div class="col-12 col-sm-10 full-rewiew-con-text">
+				<h2 class="title title--h2 mb-1">Henry William</h2>
+				<span class="review-date">14 June, 2021</span>
+				<p>Ricardo was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client.
+				Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.</p>
+				<p>Ut enim ad nesid utminim veniam, quis nostrud eiusmo exercitation ullamco labori is amco commodo consequat  seds eiusmod. Adipisicing velit eu eiusmod nisi ad nulla. 
+				Magna deserunt ipsum pariatur sunt incididunt culpa cupidatat. Pariatur occaecat enim dolor culpa nisi ea eiusmod do qui culpa consectetur laboris eiusmod anim.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- JavaScripts -->
+	<script src="assets/js/jquery-3.4.1.min.js"></script>
+	<script src="assets/js/plugins.min.js"></script>
+    <script src="assets/js/common.js"></script>
+    
+	<!-- Mapbox init -->
+	<script src="assets/js/mapbox.init.js"></script>
+
+</body>
+</html>
