@@ -3,9 +3,9 @@
     <div class="news-item__image-wrap">
         <a class="news-item__link" href="{{ include.post.url | relative_url }}"></a>
         {% if post.image %}
-        <img class="cover lazyload" src="{{ post.image.url }}" alt=""/>
+        <img class="cover lazyload" src="{{ site.url }}/{{ post.image.url }}" alt="{{ post.image.alt }}"/>
         {% else %}
-        <img class="cover lazyload" src="assets/images/433x240.jpg" alt=""/>
+        <img class="cover lazyload" src="{{ site.url }}/assets/images/433x240.jpg" alt=""/>
         {% endif %}
     </div>
     <div class="news-item__caption">
