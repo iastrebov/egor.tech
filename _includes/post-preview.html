@@ -1,0 +1,16 @@
+<!-- Post -->
+<article class="news-item box">
+    <div class="news-item__image-wrap">
+        <a class="news-item__link" href="{{ include.post.url | relative_url }}"></a>
+        {% if post.image %}
+        <img class="cover lazyload" src="{{ post.image.url }}" alt=""/>
+        {% else %}
+        <img class="cover lazyload" src="assets/images/433x240.jpg" alt=""/>
+        {% endif %}
+    </div>
+    <div class="news-item__caption">
+        <div class="news-item__date">{{ include.post.date | date: "%B %-d, %Y" }}</div>
+        <h2 class="title title--h2"><a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></h2>
+        {{ include.post.excerpt }}
+    </div>
+</article>
