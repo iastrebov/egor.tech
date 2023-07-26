@@ -1,0 +1,10 @@
+<!-- Menu -->
+<div class="nav-container">
+  <ul class="nav">
+    {% for item in site.navigation %}
+    <li class="nav__item">
+      <a class="{% if item.page == page.url %}active{% endif %}" href="{{ item.url }}">{{ item.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

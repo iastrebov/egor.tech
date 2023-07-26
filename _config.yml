@@ -34,6 +34,21 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
+
+navigation:
+  - title: About
+    page:  /
+    url:  /
+  - title: Resume
+    page:  /resume.html
+    url:  /resume
+  - title: Blog
+    page:  /blog.html
+    url:  /blog
+  - title: Contact
+    page:  /contact.html
+    url:  /contact
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
