@@ -5,13 +5,13 @@ categories: jekyll update
 excerpt_separator: <!--more-->
 greeting: hello
 image:
-  url: assets/images/blog/2.jpg
+  url: assets/images/blog/2.jpeg
   alt: Alter image
 ---
 
 # Markdown article from notion
 
-![_f6607799-9ae0-4c19-846c-3c8ec3be34bc.jpeg](Markdown%20article%20from%20notion%201f5b09346da443d5bf5541ee79633061/_f6607799-9ae0-4c19-846c-3c8ec3be34bc.jpeg)
+![_/assets/images/blog/2.jpeg](/assets/images/blog/2.jpeg)
 
 # Heading 1
 
