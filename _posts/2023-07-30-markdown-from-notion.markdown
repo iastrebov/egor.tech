@@ -1,4 +1,5 @@
 ---
+layout: post
 title:  Welcome to Egor.tech!
 date:   2023-07-30 15:53:11 +0100
 categories: jekyll update
