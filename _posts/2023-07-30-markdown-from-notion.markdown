@@ -10,6 +10,8 @@ image:
   alt: Alter image
 ---
 
+small desc <!--more-->
+
 # Markdown article from notion
 
 ![_/assets/images/blog/2.jpeg](/assets/images/blog/2.jpeg)
@@ -35,7 +37,7 @@ public static void main() {
 }
 ```
 
-[https://gist.github.com/iastrebov/6224c25ae8166973cbb282b37de988d2](https://gist.github.com/iastrebov/6224c25ae8166973cbb282b37de988d2)
+{% gist 6224c25ae8166973cbb282b37de988d2 %}
 
 Yellow
 
