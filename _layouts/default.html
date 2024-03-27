@@ -69,7 +69,11 @@
 <script src="{{ site.url }}/assets/js/jquery-3.4.1.min.js"></script>
 <script src="{{ site.url }}/assets/js/plugins.min.js"></script>
 <script src="{{ site.url }}/assets/js/common.js"></script>
-<script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/ce79142e0299fe0f7bd1da50faf6d22c.js"></script>
+
+{% if site.cookie.consent %}
+    <script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/ce79142e0299fe0f7bd1da50faf6d22c.js"></script>
+{% endif %}
+
 
 </body>
 </html>
