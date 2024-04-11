@@ -31,6 +31,8 @@ Let’s get to it.
 
 ### Metadata
 
+<script src="https://gist.github.com/iastrebov/27971b5d7696dce5723d0b2ade1c4c65.js"></script>
+
 Metadata is what Kindle and other publishing platforms use to populate bibliographic information about your book such as:
 
 *   Title
